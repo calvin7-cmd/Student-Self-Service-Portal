@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ISBAT University Portal</title>
+    <link rel="stylesheet" href="portal.css">
+    <style>
+        /* Internal CSS for Quick-Links Grid */
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .quick-card {
+            background-color: #FFFFFF;
+            border: 1px solid #DCE1E7;
+            border-radius: 8px;
+            padding: 25px;
+            text-decoration: none;
+            color: #1A1A2E;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .quick-card:hover {
+            border-color: #1A1A2E;
+            transform: translateY(-2px);
+        }
+
+        .quick-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .quick-card span {
+            font-size: 13px;
+            color: #E94560;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-area">
+            <h2>ISBAT</h2>
+            <span>University Portal</span>
+        </div>
+        <div class="student-profile">
+            <p>Mwesige Calvin Allan</p>
+            <small>BIT/2025/0419</small>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="courses.html">My Courses</a></li>
+            <li><a href="fees.html">Fee Statement</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header-bar">
+            <div>
+                <h1>Welcome, Mwesige Calvin Allan</h1>
+                <p class="date-text">Monday, November 23, 2026</p>
+            </div>
+            <div>
+                <!-- Inline CSS for status badge -->
+                <span style="background: #EAF3DE; color: #27500A; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: bold;">
+                    Active
+                </span>
+            </div>
+        </header>
+
+        <section class="metrics-container">
+            <div class="metric-card">
+                <h3>Cumulative GPA</h3>
+                <div class="value">4.12 / 5.0</div>
+            </div>
+            <div class="metric-card">
+                <h3>Credit Hours Earned</h3>
+                <div class="value">72 Credits</div>
+            </div>
+            <div class="metric-card">
+                <h3>Outstanding Fee Balance</h3>
+                <div class="value">UGX 450,000</div>
+            </div>
+        </section>
+
+        <h2 class="section-title">Quick Links</h2>
+        <section class="quick-links-grid">
+            <a href="dashboard.html" class="quick-card">
+                <h3>Dashboard</h3>
+                <span>View academic summary &rarr;</span>
+            </a>
+            <a href="courses.html" class="quick-card">
+                <h3>My Courses</h3>
+                <span>Check enrolled units & timetable &rarr;</span>
+            </a>
+            <a href="fees.html" class="quick-card">
+                <h3>Fee Statement</h3>
+                <span>Review invoices & payments &rarr;</span>
+            </a>
+            <a href="profile.html" class="quick-card">
+                <h3>Update Profile</h3>
+                <span>Manage contact & next of kin &rarr;</span>
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>

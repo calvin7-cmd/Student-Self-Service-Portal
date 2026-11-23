@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses | ISBAT University Portal</title>
+    <link rel="stylesheet" href="portal.css">
+    <style>
+        /* Internal CSS for Timetable Course Colours */
+        .webtech {
+            background-color: #DBEAFE;
+            color: #1E3A8A;
+            font-weight: 600;
+        }
+
+        .cprog {
+            background-color: #FCE7F3;
+            color: #831843;
+            font-weight: 600;
+        }
+
+        .dbms {
+            background-color: #FEF3C7;
+            color: #92400E;
+            font-weight: 600;
+        }
+
+        .netsec {
+            background-color: #E0E7FF;
+            color: #3730A3;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-area">
+            <h2>ISBAT</h2>
+            <span>University Portal</span>
+        </div>
+        <div class="student-profile">
+            <p>David Mukasa</p>
+            <small>BIT/2025/0419</small>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html" class="active">My Courses</a></li>
+            <li><a href="fees.html">Fee Statement</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header-bar">
+            <div>
+                <h1>My Courses & Timetable</h1>
+                <p class="date-text">Semester I — 2026/2027 Academic Year</p>
+            </div>
+        </header>
+
+        <h2 class="section-title">Enrolled Courses</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Lecturer</th>
+                    <th>Room</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BIT 2101</td>
+                    <td>Web Technologies & Development</td>
+                    <td>4</td>
+                    <td>Mr. Samuel Ochieng</td>
+                    <td>Lab 3 (Block B)</td>
+                    <td style="background: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+                </tr>
+                <tr>
+                    <td>BIT 2102</td>
+                    <td>Structured Programming in C</td>
+                    <td>4</td>
+                    <td>Dr. Grace Namukasa</td>
+                    <td>Lab 1 (Block A)</td>
+                    <td style="background: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+                </tr>
+                <tr>
+                    <td>BIT 2103</td>
+                    <td>Database Management Systems</td>
+                    <td>3</td>
+                    <td>Mr. Rajesh Sharma</td>
+                    <td>Room 204</td>
+                    <td style="background: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+                </tr>
+                <tr>
+                    <td>BIT 2104</td>
+                    <td>Computer Networks & Security</td>
+                    <td>4</td>
+                    <td>Ms. Esther Nabirye</td>
+                    <td>Cisco Lab</td>
+                    <td style="background: #E1F5EE; color: #085041; font-weight: bold;">Active</td>
+                </tr>
+                <tr>
+                    <td>BIT 2105</td>
+                    <td>Object-Oriented Analysis & Design</td>
+                    <td>3</td>
+                    <td>Mr. Peter Kiggundu</td>
+                    <td>Room 108</td>
+                    <td style="background: #FAEEDA; color: #633806; font-weight: bold;">Pending</td>
+                </tr>
+                <tr>
+                    <td>BGS 2106</td>
+                    <td>Research Methodology & Ethics</td>
+                    <td>2</td>
+                    <td>Dr. Anita Patel</td>
+                    <td>Auditorium 2</td>
+                    <td style="background: #FAEEDA; color: #633806; font-weight: bold;">Pending</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Weekly Lecture Timetable</h2>
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-col">8:00 AM - 9:00 AM</td>
+                    <td class="webtech" rowspan="2">BIT 2101<br><small>Web Tech (Lab 3)</small></td>
+                    <td></td>
+                    <td class="dbms" rowspan="2">BIT 2103<br><small>DBMS (Rm 204)</small></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">9:00 AM - 10:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">10:00 AM - 11:00 AM</td>
+                    <td></td>
+                    <td class="cprog" rowspan="2">BIT 2102<br><small>C Prog (Lab 1)</small></td>
+                    <td></td>
+                    <td class="netsec" rowspan="2">BIT 2104<br><small>NetSec (Cisco Lab)</small></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">11:00 AM - 12:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">12:00 PM - 1:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">1:00 PM - 2:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="webtech" rowspan="2">BIT 2101<br><small>Web Tech Practical</small></td>
+                </tr>
+                <tr>
+                    <td class="time-col">2:00 PM - 3:00 PM</td>
+                    <td class="netsec" rowspan="2">BIT 2104<br><small>NetSec Lecture</small></td>
+                    <td></td>
+                    <td class="cprog" rowspan="2">BIT 2102<br><small>C Prog Lab</small></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">3:00 PM - 4:00 PM</td>
+                    <td></td>
+                    <td class="dbms">BIT 2103<br><small>DBMS Tutorial</small></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-col">4:00 PM - 5:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
